@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+ActiveRecord::Base.transaction do
+  Cat.create(:age => 5, :birth_date => "10-10-2008", :color =>
+  "black", :sex => "m")
+  Cat.create(:age => 5, :birth_date => "10-09-2008", :color =>
+  "white", :sex => "m")
+  Cat.create(:age => 5, :birth_date => "10-07-2008", :color =>
+  "red", :sex => "f")
+  Cat.create(:age => 5, :birth_date => "10-10-2008", :color =>
+  "white", :sex => "f")
+end

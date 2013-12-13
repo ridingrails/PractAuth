@@ -1,3 +1,9 @@
+<% cat = @cat %>
 <tr>
-	<td>Name: <%= cat.name %></td><td>Age: <%= cat.age %></td><td>Birthdate: <%= cat.birth_date %></td><td>Color: <%= cat.color %></td><td>Sex: <%= cat.sex %></td><td><%= link_to "show this cat", cat_url(cat) %></td>
+	<td>Name: <%= cat.name %></td>
+	<td>Age: <%= cat.age %></td>
+	<td>Birthdate: <%= cat.birth_date %></td>
+	<td>Color: <%= cat.color %></td>
+	<td>Sex: <%= cat.sex %></td>
+	<td><%= link_to "show this cat", cat_url(cat) %></td>
 </tr>

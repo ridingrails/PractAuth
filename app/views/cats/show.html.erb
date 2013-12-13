@@ -1,5 +1,3 @@
-<% cat = @cat %>
-<h2>Here is <%= cat.name %> :</h2>
 <table>
-	<%= render cat %>
+	<%= render :partial => "cat", locals => { cat => @cat } %>
 </table>

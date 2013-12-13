@@ -6,4 +6,5 @@ class Cat < ActiveRecord::Base
   validates_presence_of :age, :birth_date, :color, :name, :sex
   validates :age, :numericality => true
   validates :color, :inclusion => VALID_COLOR
+  validates :sex, :inclusion => VALID_GENDER
 end

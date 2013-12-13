@@ -1,12 +1,7 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key is used for verifying the integrity of signed cookies.
+# Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-# You can use `rake secret` to generate a secure secret key.
-
-# Make sure your secret_key_base is kept private
-# if you're sharing your code publicly.
-PractAuth::Application.config.secret_key_base = '267c022d59e130dab2ef6bb23138a9fc9447545c13af2be4e6815de7cbc64cd1cb04af1d2d565ba8c496374dd5431ca40ef54b41adda6d03245129cae480c6ba'
+PractAuth::Application.config.secret_token = '06441b7d72f68b06bf6d148cb6b7ee9b528b085543251552d32581d26aacaa1a1ecd423531203332f4102ec1e0cfd781257c29979ce2b70abe080818096b87aa'
